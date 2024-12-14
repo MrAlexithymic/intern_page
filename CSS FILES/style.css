@@ -167,15 +167,15 @@
     }
     
     .service_residential {
-        background-image: url('res1.png');
+        background-image: url("res1.png");
     }
     
     .service_commercial {
-        background-image: url(commer1.png);
+        background-image: url(Imgaes/commer1.png);
     }
     
     .service_industrial {
-        background-image: url(indus1.png);
+        background-image: url(Images/indus1.png);
     }
     
     .service:hover,

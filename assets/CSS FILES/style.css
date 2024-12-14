@@ -6,17 +6,6 @@
         appearance: appear;
     }
     
-    @keyframes appear {
-        from {
-            opacity: 1;
-            transform: translateX(-100px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-    
     .services {
         animation: appear linear;
         animation-timeline: view();
@@ -42,18 +31,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-    }
-    
-    @media (max-width: 768px) {
-        .nav-list {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            background-color: #333;
-        }
     }
     
     .logo img {
@@ -115,17 +92,6 @@
         animation-delay: 1s;
     }
     
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
     h2 {
         text-align: center;
         margin-top: 20px;
@@ -167,15 +133,15 @@
     }
     
     .service_residential {
-        background-image: url("res1.png");
+        background-image: url(/assets/Images/residental.png);
     }
     
     .service_commercial {
-        background-image: url(Imgaes/commer1.png);
+        background-image: url(/assets/Images/commercial.png);
     }
     
     .service_industrial {
-        background-image: url(Images/indus1.png);
+        background-image: url(/assets/Images/industrial.png);
     }
     
     .service:hover,
@@ -185,42 +151,6 @@
         transform: scale(1.05);
     }
     /* Media Queries for Responsiveness */
-    
-    @media (max-width: 768px) {
-        .service {
-            padding: 15px;
-            /* Reduce padding on smaller screens */
-            height: 180px;
-            /* Adjust height on smaller screens */
-        }
-        .service_residential,
-        .service_commercial,
-        .service_industrial {
-            padding: 15px;
-            /* Reduce padding on smaller screens */
-            height: 180px;
-            /* Adjust height on smaller screens */
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .services {
-            justify-content: center;
-            /* Center services on very small screens */
-        }
-        .service {
-            max-width: 90%;
-            /* Allow more width on very small screens */
-            height: 150px;
-            /* Further adjust height */
-        }
-        .service_residential,
-        .service_commercial,
-        .service_industrial {
-            height: 150px;
-            /* Further adjust height */
-        }
-    }
     
     .prev,
     .next {
@@ -352,17 +282,6 @@
         background-color: #b29361;
     }
     
-    @keyframes appear {
-        from {
-            opacity: 1;
-            transform: translateX(-100px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-    
     .testimonial {
         display: inline-block;
         margin: 40px;
@@ -454,6 +373,113 @@
     }
     /* Media Queries for Responsiveness */
     
+    footer {
+        align-items: left;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    
+    nav {
+        display: flex;
+        gap: 40px;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    nav a:hover {
+        color: #b29361;
+    }
+    
+    @keyframes appear {
+        from {
+            opacity: 1;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+        }
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .service {
+            padding: 15px;
+            /* Reduce padding on smaller screens */
+            height: 180px;
+            /* Adjust height on smaller screens */
+        }
+        .service_residential,
+        .service_commercial,
+        .service_industrial {
+            padding: 15px;
+            /* Reduce padding on smaller screens */
+            height: 180px;
+            /* Adjust height on smaller screens */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .services {
+            justify-content: center;
+            /* Center services on very small screens */
+        }
+        .service {
+            max-width: 90%;
+            /* Allow more width on very small screens */
+            height: 150px;
+            /* Further adjust height */
+        }
+        .service_residential,
+        .service_commercial,
+        .service_industrial {
+            height: 150px;
+            /* Further adjust height */
+        }
+    }
+    
+    @keyframes appear {
+        from {
+            opacity: 1;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
     @media (max-width: 768px) {
         .testimonial {
             margin: 10px;
@@ -500,26 +526,4 @@
             width: 80px;
             /* Smaller image size on very small screens */
         }
-    }
-    
-    footer {
-        align-items: left;
-        background-color: #333;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 0 20px;
-    }
-    
-    nav {
-        display: flex;
-        gap: 40px;
-    }
-    
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        margin-top: 10px;
     }

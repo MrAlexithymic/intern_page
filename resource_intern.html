@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos and Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styles */
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: -webkit-linear-gradient(#d2cbcb, rgb(141, 130, 118), rgb(109, 97, 84), rgb(120, 95, 69));
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        section {
+            margin: 20px;
+        }
+        
+        h2 {
+            color: #ffffff;
+            font-size: 40px;
+        }
+        
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 30px;
+        }
+        
+        .video-container iframe {
+            width: 560px;
+            height: 315px;
+            border: none;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.2s;
+        }
+        
+        .abc {
+            border: #d2cbcb 5px solid;
+            padding: 1px;
+            border-radius: 30px;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.2s;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .resource-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .resource-item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .resource-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 99%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Videos and Resources</h1>
+    </header>
+
+    <!-- Videos Section -->
+    <section>
+        <h2>Project Process Videos</h2>
+        <div class="video-container">
+            <!-- Embed your Project Process Videos here -->
+            <video width="640" height="360" controls class="abc" poster="p1.jpeg">
+  <source src="v2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            <video width="640" height="360" controls class="abc" poster="p2.jpeg">
+  <source src="v3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            <video width="640" height="360" controls class="abc" poster="p3.jpeg">
+  <source src="v4.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            <video width="640" height="360" controls class="abc" poster="p4.jpeg">
+  <source src="v5.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+        </div>
+
+        <h2>Client Testimonials</h2>
+        <div class="video-container">
+            <!-- Embed your Client Testimonial Videos here -->
+            <video width="640" height="360" controls class="abc" poster="p6.jpg">
+  <source src="test1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            <video width="640" height="360" controls class="abc" poster="p7.jpg">
+  <source src="test2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            <video width="640" height="360" controls class="abc" poster="p8.jpg">
+  <source src="test3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            <video width="640" height="360" controls class="abc" poster="p5.jpg">
+  <source src="test4.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+        </div>
+    </section>
+
+    <!-- Downloadable Resources Section -->
+    <section>
+        <h2>Downloadable Resources</h2>
+        <div class="resource-container">
+            <div class="resource-item">
+                <h3>Project Brochure</h3>
+                <p>Learn more about our services and past projects.</p>
+                <a href="Construction_Company_Brochure.pdf" download>Download PDF</a>
+            </div>
+            <div class="resource-item">
+                <h3>How-to Guide</h3>
+                <p>Read our step-by-step guide for success in your projects.</p>
+                <a href="Construction_Company_How_to_Guide.pdf" download>Download PDF</a>
+            </div>
+            <div class="resource-item">
+                <h3>Case Study</h3>
+                <p>Discover how we helped our clients achieve their goals.</p>
+                <a href="Case Study.pdf" download>Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Construction Company. All rights reserved.</p>
+    </footer>
+    <script>
+        const videos = document.querySelectorAll('video');
+
+        // Add event listeners to each video
+        videos.forEach(video => {
+            video.addEventListener('play', () => {
+                // Pause all other videos when one is played
+                videos.forEach(otherVideo => {
+                    if (otherVideo !== video) {
+                        otherVideo.pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

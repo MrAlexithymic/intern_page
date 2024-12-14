@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: whitesmoke;
+    line-height: 1.6;
+}
+
+.application-form {
+    text-align: left;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.application-form h2 {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.application-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid #b29361;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
+}
+
+.application-form label {
+    font-weight: bold;
+}
+
+.application-form input,
+.application-form textarea,
+.application-form button {
+    max-width: 600px;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.application-form button {
+    background-color: #b29361;
+    color: #FFFDD0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.application-form button:hover {
+    background-color: #996847;
+}

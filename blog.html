@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Blog</title>
+    <style>
+        /* General Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            color: #444;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        /* Main Section */
+        
+        main {
+            flex: 1;
+        }
+        /* Blog Section */
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .blog-post {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .blog-post-content {
+            padding: 15px;
+        }
+        
+        .blog-post-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog-post-content p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .read-more:hover {
+            color: #0056b3;
+        }
+        
+        .read-more-content {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        
+        .blog-post.expanded .read-more-content {
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Construction Insights Blog</h1>
+        <p>Discover the latest trends, tips, and industry updates in construction and design.</p>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <!-- Blog Post 1 -->
+            <article class="blog-post">
+                <img src="blog4.jpg" alt="Home Renovation">
+                <div class="blog-post-content">
+                    <h2>5 Home Renovation Tips</h2>
+                    <p>Transform your living space with our expert tips on home renovation. From planning to execution, we've got you covered.</p>
+                    <a class="read-more">Read More</a>
+                    <div class="read-more-content">
+                        <p>Home renovations are exciting but require careful planning. Start with setting a clear budget to avoid overspending. Consider hiring experienced contractors who can guide you through the process. Focus on eco-friendly designs like
+                            energy-efficient windows and insulation to save on utility bills. Don't forget to plan for unexpected expenses, and make sure to prioritize high-traffic areas like kitchens and bathrooms for maximum impact.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+                <img src="blog2.jpg" alt="Building Safety">
+                <div class="blog-post-content">
+                    <h2>Building Safety Essentials</h2>
+                    <p>Safety is the foundation of any construction project. Learn how to protect your workers and your site.</p>
+                    <a class="read-more">Read More</a>
+                    <div class="read-more-content">
+                        <p>Ensuring safety on a construction site is non-negotiable. Regularly inspect scaffolding and machinery for stability and functionality. Equip workers with personal protective gear such as helmets, gloves, and harnesses. Conduct
+                            frequent safety training to keep everyone updated on the latest protocols. Implementing technology like wearable sensors can also monitor workers' health and prevent accidents. A safe site fosters productivity and confidence
+                            among workers.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post">
+                <img src="blog6.jpg" alt="Sustainable Design">
+                <div class="blog-post-content">
+                    <h2>Embracing Sustainable Construction</h2>
+                    <p>Discover the impact of sustainable practices in modern construction.</p>
+                    <a class="read-more">Read More</a>
+                    <div class="read-more-content">
+                        <p>Sustainability in construction focuses on using resources efficiently to minimize environmental impact. From solar panels to recycled materials, green building techniques are more accessible than ever. Adopting these practices
+                            not only reduces carbon footprints but also lowers long-term costs, proving beneficial for homeowners and developers alike.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-post">
+                <img src="blog7.jpg" alt="Urban Development">
+                <div class="blog-post-content">
+                    <h2>Future of Urban Development</h2>
+                    <p>Explore the latest trends in sustainable urban infrastructure and smart city designs.</p>
+                    <a class="read-more">Read More</a>
+                    <div class="read-more-content">
+                        <p>Urban development is rapidly evolving with innovative technologies and environmentally conscious designs. Cities are embracing smart technologies like IoT and AI to enhance infrastructure efficiency. Vertical gardens, urban farming,
+                            and renewable energy systems are becoming cornerstones of modern city planning, creating sustainable, resilient communities.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Construction Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreLinks = document.querySelectorAll('.read-more');
+
+            readMoreLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const parentPost = this.closest('.blog-post');
+                    const content = parentPost.querySelector('.read-more-content');
+
+                    // Toggle visibility of the current blog post's content
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        this.textContent = 'Read More';
+                    } else {
+                        content.style.display = 'block';
+                        this.textContent = 'Read Less';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

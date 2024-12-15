@@ -20,7 +20,7 @@
         header {
             background-color: #333;
             color: white;
-            padding: 5px;
+            padding: 10px;
             text-align: center;
         }
         
@@ -30,7 +30,8 @@
         
         h2 {
             color: #ffffff;
-            font-size: 40px;
+            font-size: 2.5rem;
+            /* Responsive font size */
         }
         
         .video-container {
@@ -42,9 +43,13 @@
             border-radius: 30px;
         }
         
-        .video-container iframe {
-            width: 560px;
-            height: 315px;
+        .video-container video {
+            width: 100%;
+            /* Make video responsive */
+            max-width: 640px;
+            /* Set a max width */
+            height: auto;
+            /* Maintain aspect ratio */
             border: none;
             animation: fadeIn 2s forwards;
             animation-delay: 0.2s;
@@ -83,6 +88,10 @@
             width: 250px;
             text-align: center;
             border-radius: 8px;
+            flex: 1 1 200px;
+            /* Allow flexibility */
+            max-width: 250px;
+            /* Set a max width */
         }
         
         .resource-item a {
@@ -151,23 +160,17 @@
         .footer-social {
             display: flex;
             justify-content: left;
-            /* Center the social icons */
             margin-top: 2px;
-            /* Add some space above the social icons */
         }
         
         .footer-social ul {
             display: flex;
-            /* Use flexbox for horizontal alignment */
             padding: 0;
-            /* Remove default padding */
             list-style: none;
-            /* Remove default list style */
         }
         
         .footer-social li {
             margin-right: 20px;
-            /* Space between icons */
         }
         
         .footer-social a {
@@ -189,30 +192,30 @@
             opacity: 0.7;
         }
         
-        .fa-facebook {
-            background: #b29361;
-            color: white;
-        }
-        
-        .fa-instagram {
-            background: #b29361;
-            color: white;
-        }
-        
-        .fa-youtube {
-            background: #b29361;
-            color: white;
-        }
-        
+        .fa-facebook,
+        .fa-instagram,
+        .fa-youtube,
         .fa-linkedin {
             background: #b29361;
             color: white;
         }
         
         @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+                /* Adjust heading size for smaller screens */
+            }
             .footer-section {
                 width: 100%;
                 margin-bottom: 20px;
+            }
+            .video-container {
+                padding: 10px;
+                /* Reduce padding for smaller screens */
+            }
+            .resource-item {
+                max-width: 100%;
+                /* Allow full width on smaller screens */
             }
         }
     </style>
@@ -229,44 +232,42 @@
     <section>
         <h2>Project Process Videos</h2>
         <div class="video-container">
-            <!-- Embed your Project Process Videos here -->
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p1.jpeg">
-  <source src="assets/videos/v2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p2.jpeg">
-  <source src="assets/videos/v3.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p3.jpeg">
-  <source src="assets/videos/v4.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p4.jpeg">
-  <source src="assets/videos/v5.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+            <video controls class="abc" poster="assets/Images/p1.jpeg">
+                <source src="assets/videos/v2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="abc" poster="assets/Images/p2.jpeg">
+                <source src="assets/videos/v3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="abc" poster="assets/Images/p3.jpeg">
+                <source src="assets/videos/v4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="abc" poster="assets/Images/p4.jpeg">
+                <source src="assets/videos/v5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <h2>Client Testimonials</h2>
         <div class="video-container">
-            <!-- Embed your Client Testimonial Videos here -->
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p6.jpg">
-  <source src="assets/videos/test1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p7.jpg">
-  <source src="assets/videos/test2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p8.jpg">
-  <source src="assets/videos/test3.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-            <video width="640" height="360" controls class="abc" poster="assets/Images/p5.jpg">
-  <source src="assets/videos/test4.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+            <video controls class="abc" poster="assets/Images/p6.jpg">
+                <source src="assets/videos/test1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="abc" poster="assets/Images/p7.jpg">
+                <source src="assets/videos/test2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="abc" poster="assets/Images/p8.jpg">
+                <source src="assets/videos/test3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="abc" poster="assets/Images/p5.jpg">
+                <source src="assets/videos/test4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
 

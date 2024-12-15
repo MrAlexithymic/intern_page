@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pricing & Quotation</title>
     <style>
         body {
@@ -90,6 +91,129 @@
         button:hover:not(:disabled) {
             background: #a47e5c;
         }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+        }
+        
+        .container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .footer-section {
+            width: calc(100% / 4 - 30px);
+            margin-bottom: 30px;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #b29361;
+        }
+        
+        .footer-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .footer-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-list li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: #b29361;
+        }
+        
+        .footer-section a:hover {
+            color: #b29361;
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: left;
+            /* Center the social icons */
+            margin-top: 2px;
+            /* Add some space above the social icons */
+        }
+        
+        .footer-social ul {
+            display: flex;
+            /* Use flexbox for horizontal alignment */
+            padding: 0;
+            /* Remove default padding */
+            list-style: none;
+            /* Remove default list style */
+        }
+        
+        .footer-social li {
+            margin-right: 20px;
+            /* Space between icons */
+        }
+        
+        .footer-social a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .fa {
+            padding: 5px;
+            font-size: 15px;
+            width: 25px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #b29361;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #b29361;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #b29361;
+            color: white;
+        }
+        
+        .fa-linkedin {
+            background: #b29361;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -166,6 +290,64 @@
             <button type="submit">Submit Request</button>
         </form>
     </div>
+    <footer>
+        <div class="container1">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Construction Company</h4>
+                    <p>Your trusted partner in building dreams.</p>
+                    <a class="footer-link" href="#">read more →</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Discover</h4>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="Qutation_intern.html">Quotation</a></li>
+                        <li><a class="footer-link" href="#">Partners</a></li>
+                        <li><a class="footer-link" href="#">Giving back</a></li>
+                        <li><a class="footer-link" href="#">Help & Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">About</h4>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="about_intern.html">Mission & Vision</a></li>
+                        <li><a class="footer-link" href="about_intern.html">Team</a></li>
+                        <li><a class="footer-link" href="career_intern.html">Careers</a></li>
+                        <li><a class="footer-link" href="blog_intern.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="resource_intern.html">Project Videos</a></li>
+                        <li><a class="footer-link" href="contact_intern.html">Contact</a></li>
+                        <li><a class="footer-link" href="#">Global</a></li>
+                        <li><a class="footer-link" href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                </ul>
+            </div>
+            <p>Copyright ©2024 All rights reserved </p>
+            <p><a class="footer-link" href="#">Terms</a></p>
+            <p><a class="footer-link" href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
 
     <script>
         const USD_TO_INR = 82; // Exchange rate (update as needed)
